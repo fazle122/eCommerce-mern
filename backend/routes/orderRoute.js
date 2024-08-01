@@ -1,17 +1,11 @@
 import express from 'express';
 import { protect,adminProtect } from '../middleware/authMiddleware.js';
-// import {createOrder,
-//         getUserOrders,
-//         getOrderById,
-//         updateOrderToPaid,
-//         updateOrderToDelivered,
-//         getOrders} from '../controllers/orderController.js';
 import {createOrder,
         getUserOrders,
         getOrderById,
         updateOrderToPaid,
         updateOrderToDelivered,
-        getOrders} from '../controllers/orderCOntroller.js';
+        getOrders} from '../controllers/orderController.js';
 
 const router = express.Router();
 
