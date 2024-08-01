@@ -5,10 +5,12 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production nodemon backend/server.js",
+    "start": "NODE_ENV=production node backend/server.js",
     "server": "NODE_ENV=development nodemon backend/server.js",
     "data-import": "node seeder.js",
-    "data-delete": "node seeder.js -d"
+    "data-delete": "node seeder.js -d",
+    "client": "npm start --prefix eCommerce-redux-toolkit",
+    "build": "npm install && npm install --prefix eCommerce-redux-toolkit && npm run build --prefix eCommerce-redux-toolkit"
   },
   "author": "fr",
   "license": "ISC",
