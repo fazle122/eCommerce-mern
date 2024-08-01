@@ -46,7 +46,7 @@ export default function Cart(){
             {
                 cartItems.map((item) => <CartRow key={item._id}item={item} />)
                 // cartItems.map((item) => <div key={item._id}>
-                //     <img className="my-2 w-16 px-2 py-2 rounded-sm border-2 " src={item.image} alt={item.name} />
+                //     <img className="my-2 w-16 px-2 py-2 rounded-sm border-2 " src={item.images[0].url} alt={item.name} />
                 //     <h2>{`Name: ${item.name}`}</h2>
                 //     <h2>{`Quantity: ${item.qty}`}</h2>
                 //     <div className="space-x-2">

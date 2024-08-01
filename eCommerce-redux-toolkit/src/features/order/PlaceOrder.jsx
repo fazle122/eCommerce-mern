@@ -59,7 +59,7 @@ export default function PlaceOrder(){
                         {cart.cartItems.length === 0 ? <p>No item added to cart</p> :
                             cart.cartItems.map((item,index) => (
                                 <div className="flex space-x-6" key={index}>
-                                    <img className="w-16" src={item.image} alt={item.name} />
+                                    <img className="w-16" src={item.images[0].url} alt={item.name} />
                                     <Link to={`/product/${item._id}`} className="underline">{item.name}</Link>
                                     <p>{`Qty: ${item.qty}`}</p>
                                     <p>{`Total: ${item.price}`}</p>

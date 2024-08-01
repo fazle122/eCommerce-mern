@@ -42,7 +42,7 @@ export default function ProductDetail(){
    
 
     function handleClick(){
-        dispatch(addToCart({...product,qty}));
+        dispatch(addToCart({...product,image:product.images[0].url,qty}));
         navigate("/cart");
     }
 
